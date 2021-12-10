@@ -1,0 +1,106 @@
+body {
+    margin: auto;
+    width: 1100px;
+    background-color: #97d6d6;
+    font-family: Monospace;
+    
+}
+#logo {
+    margin-top: auto;    
+    margin-right: 2%;
+    margin-bottom: 1%;     
+    text-align: center;
+    
+}
+header {
+    background: #002043;
+    border: 2px rgb(0, 38, 255) solid;
+    border-radius: 25px;
+    overflow: hidden;
+    color: rgb(163, 106, 106); 
+}
+
+
+
+#navbar {
+    width: 150%;
+    overflow:hidden;
+    background-color: #e8edf3;
+}
+
+#navbar a{
+    width: 100px;
+    height: 100px; 
+    line-height: 100px; 
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+#navbar ul{
+    padding: 0;
+    margin: 0px;
+    list-style-type: none;
+}
+#navbar li{
+    float: left;
+    font-size:large;
+}
+#navbar li:hover{
+    text-decoration:underline;
+}
+
+.main {
+    background: rgb(232, 233, 212);
+    font-family: Monospace;
+    font-size: 22px;
+    color: black;  
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 1100px;
+}
+
+.middle {
+    margin: 0%;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 20px;
+    width: 80%;
+    height: 600px;
+    overflow:auto
+    
+
+}
+
+footer {
+    background-color: #1f9bcc;
+    padding: 16px;
+    text-align: center;
+    color:black;
+    margin: auto;
+    border-radius: 15px;
+    font-size: 20px;
+   
+  }
+
+.errordisplay {
+     
+    float: right;
+    width: 150px;
+    height: 120px;
+    font-size: 15px;
+    
+}
+
+#signup{ 
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #fefeff;
+    height: 80%;
+    font-size: 20px;
+}
+
+
+
+
