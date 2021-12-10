@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Han Lu</title>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="normalize.css">
+    <script src="info.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><img src="Logo.jpg" alt="logo" height="150" width="150">
+        <h2>WEB222 - Final Assessment</h2>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="honesty.html">Honesty</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+    
+            </ul>
+        </nav>                             
+    </header>
+    
+
+        <div class="middle">
+            <h1>User Info</h1>
+            <form action="https://httpbin.org/post" id="signup" name="signup" method="post" onsubmit="return error_validation()">
+                <input type="hidden" name="last-Name" id="last-Name" value="Lu" />
+                <input type="hidden" name="studentId" id="studentId" value="123237216" />
+
+                
+                <label for="first">First Name: </label><br>
+                <input type="text" id="first" name="firstname" required /><br>
+                <label for="last">Last Name: </label><br>
+                <input type="text" id="last" name="lastname" required /><br>
+
+                
+                <label for="password">Password: </label><br>
+                <input type="password" id="password" name="password" required /><br>
+                <label for="PasswordConfirmation">Re-Enter Password: </label><br>
+                <input type="password" id="PasswordConfirmation" name="PasswordConfirmation" required /><br>
+                <label for="username">Username: </label><br>
+                <input type="text" name="username" id="username" required /><br>
+
+                
+                <label for="email">Email: </label><br>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /> <br>
+
+                
+                <label for="age">Age: </label><br>
+                <input type="text" name="age" id="age" required /><br><br>
+
+               
+                <fieldset>
+                    <label for="Education">Education Status: </label><br>
+                    <input type="radio" name="Education" id="Education" value="Graduated" required />Graduated
+                    <input type="radio" name="Education" id="Education1" value="Current enrolled" />Current enrolled
+                    <input type="radio" name="Education" id="Education2" value="Did not graduate" /> Did not graduate
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Submit" id="button">
+               
+                <input type="reset" value="Reset">
+               
+
+                <div id="error"></div>
+            </form>
+        </div>
+
+        
+        <div class="errordisplay">
+            <h2>Errors</h2>
+            <p id="msg"></p>
+            <p id="msg1"></p>
+            <p id="msg2"></p>
+            <p id="msg3"></p>
+            <p id="msg4"></p>
+            <p id="msg5"></p>
+        </div>
+
+        <footer>
+            <div class="bottom">
+                &copy; 2021 Han Lu
+                <br>
+                <a href="https://github.com/hlu48/web222Final">Github</a>
+            </div>
+        </footer>
+    
+</body>
+
+</html>
